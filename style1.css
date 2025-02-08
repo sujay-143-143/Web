@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: makes the background image fixed when scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+nav ul li {
+    margin: 0 35px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif; /* Sci-fi gaming font */
+    font-size: 20px;
+    padding: 15px 0;
+    display: block;
+    transition: font-size 0.3s ease; /* Smooth transition for font size */
+}
+nav ul li a:hover {
+    font-size: 24px; /* Increase font size on hover */
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    height: 40%;
+    width: 90%;
+    background: #9797973a;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.projects h1 {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 55px;
+}
+.projects h2 {
+    padding-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 20px;
+}
+.projects img {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px; /* Optional: adds rounded corners to the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow effect to the images */
+    transition: transform 0.3s ease; /* Smooth transition for transform property */
+    z-index: 0;
+}
+.projects img:hover {
+    transform: scale(1.05); /* Increase image size on hover */
+}
