@@ -57,7 +57,7 @@ nav ul li a:hover {
 
 .projects h1 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 60%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -68,7 +68,7 @@ nav ul li a:hover {
 .projects h2 {
     padding-top: 60px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 64%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -86,4 +86,32 @@ nav ul li a:hover {
 }
 .projects img:hover {
     transform: scale(1.05); /* Increase image size on hover */
+}
+.button {
+    position: absolute;
+    top: 86%;
+    left: 46%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif; /* Sci-fi gaming font */
+    font-size: 20px;
+    color: white;
+    background-color: rgba(90, 89, 89, 0.479); /* Semi-transparent background */
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 20px; /* Curved edges */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color, transform, and box-shadow */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+}
+
+.button a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Intensify the glowing effect on hover */
 }
